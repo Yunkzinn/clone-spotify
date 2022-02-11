@@ -1,0 +1,14 @@
+#liked-tracks .load-more {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#liked-tracks .tracks-list .tracks-table .track-info {
+    cursor: pointer;
+}
+
+@media (max-width: 810px) {
+    #liked-tracks .tracks-list {
+        overflow-x: auto;
+    }
+}

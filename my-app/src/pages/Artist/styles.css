@@ -1,0 +1,189 @@
+#artist header {
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 20%;
+}
+
+#artist .artist-info {
+    padding: 40px 0 0 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+#artist .artist-info .artist-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+}
+
+#artist .artist-info .artist-bio .type {
+    text-transform: capitalize;
+}
+
+#artist .artist-info .artist-image {
+    margin-right: 10px;
+}
+
+#artist .artist-info .artist-bio .artist-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+#artist .options {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+#artist .options button {
+    margin-left: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #fff;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.1s;
+}
+
+#artist .options button:hover {
+    transform: scale(1.06);
+}
+
+#artist .options .share {
+    margin-left: 10px;
+}
+
+#artist .tracks-artists .top-tracks h2 {
+    margin-bottom: 20px;
+}
+
+#artist .tracks-artists .top-tracks .top-tracks-item {
+    padding: 5px 15px;
+}
+
+#artist .tracks-artists {
+    display: flex;
+}
+
+#artist .albums {
+    margin-top: 40px;    
+}
+
+#artist .albums h2 {
+    margin-bottom: 20px;
+}
+
+#artist .albums .album-info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+#artist .albums .album-info a {
+    text-align: center;
+}
+
+#artist .albums .album-info .album-cover {
+    transition: .2s;
+    margin-bottom: 10px;
+}
+
+#artist .albums .album-info .album-cover:hover {
+    filter: brightness(.3);
+}
+
+#artist .albums .album-info span {
+    font-size: 14px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+
+#artist .related-artists {
+    width: 40%;
+    margin-left: 50px;
+}
+
+#artist .related-artists h2 {
+    margin-bottom: 30px;
+}
+
+#artist .related-artists .related-artist a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+#artist .related-artists .related-artist a:hover {
+    color: #fff;
+}
+
+#artist .related-artists .related-artist .related-artist-cover {
+    height: 2rem;
+    width: 2rem;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+@media (max-width: 810px) {
+    #artist .tracks-artists {
+        flex-direction: column;
+    }
+
+    #artist .related-artists {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #artist .tracks-artists .top-tracks {
+        margin-bottom: 30px;
+    } 
+    
+    #artist .albums .album-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #artist .albums .album-info .album-cover {
+        width: 9rem !important;
+        height: 9rem !important;
+    }
+
+    #artist .artist-info .artist-image {
+        margin-right: 0;
+    }
+
+    #artist .artist-info {
+        padding: 0;
+        padding-top: 15px;
+        flex-direction: column;
+    }
+
+    #artist .artist-info .artist-bio {
+        align-items: center;
+    }
+
+    #artist .options {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    #artist .options button {
+        margin-left: 0px;
+    }
+
+    #artist .related-artists .related-artist .related-artist-cover {
+        height: 4rem;
+        width: 4rem;
+    }
+}

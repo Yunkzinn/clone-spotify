@@ -1,0 +1,245 @@
+#player {
+    background-color: #282828;
+    border-top: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #b3b3b3;
+    justify-content: space-between;
+}
+
+#player .track-data {
+    display: flex;
+    align-items: center;
+}
+
+#player .track-data .track-cover {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 15px;
+}
+
+#player .track-data .track-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#player .track-data .track-info .track-name {
+    color: #FFF;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#player .track-data .track-info .track-name:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+#player .track-data .track-info .track-artist {
+    color: #c3c3c3;
+    font-size: 13px;
+}
+
+#player .track-data .track-info .track-artist + .track-artist {
+    content: ", ";
+}
+
+#player .track-data .track-info .track-artist:hover {
+    color: #fff;
+}
+
+#player .player-control {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 30%;
+}
+
+#player .player-control .player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#player .player-control .progress-bar {
+    background-color: #404040;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 4px;
+    width: 100%;
+}
+
+#player .player-control .player-controls .play-pause {
+    margin: 0 15px;
+    transition: transform .1s;
+}
+
+#player .player-control .player-controls .play-pause:hover {
+    color: #FFF;
+    transform: scale(1.1);
+}
+
+#player .options {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#player .options .spotify {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #FFF;
+    transition: .2s;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 500px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+#player .options .spotify:hover {
+    transform: scale(1.06);
+    background-color: #1DB954;
+    border-color: #1DB954;
+    color: #000;
+}
+
+#player .options .spotify svg {
+    margin-right: 5px;
+}
+
+#player .track-slider {
+    width: 50%;
+}
+
+#player .track-slider .rhap_container {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#player .track-slider .rhap_time {
+    color: inherit;
+    font-size: 14px;
+}
+
+#player .track-slider .rhap_progress-indicator {
+    background: #fff;
+    display: none;
+}
+
+#player .track-slider .rhap_progress-container:hover .rhap_progress-indicator {
+    display: block;
+}
+
+#player .track-slider .rhap_progress-container:hover .rhap_progress-filled {
+    background-color: #1DB954;
+}
+
+#player .options .spotify-icon {
+    color: #FFF;
+    display: none;
+}
+
+#player .options .spotify-icon:hover {
+    color: #1DB954;
+}
+
+#player .track-data .close-player {
+    margin-left: 15px;
+}
+
+#player .track-data .close-player:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 810px) {
+    #player {
+        flex-direction: column;
+    }
+
+    #player .track-data .track-info .track-artist {
+        display: none;
+    }
+
+    #player .track-slider {
+        width: 100% !important;
+        margin-bottom: 0 !important;
+    }
+    
+    #player .options {
+        display: none;
+    }
+
+    #player .track-data .track-cover {
+        display: none;
+    }
+
+    #player .track-data .track-info {
+        margin: 15px 45px;
+        width: 85%;
+    }
+
+    #player .options .spotify {
+        display: none;
+    }
+
+    #player .track-data .close-player {
+        position: absolute;
+        left: 0;
+        margin-left: 10px;
+    }
+    
+    #player .track-data .track-info .track-name {
+        font-weight: bold;
+    }
+
+    .rhap_stacked-reverse {
+        flex-direction: row !important;
+    }
+
+    .rhap_additional-controls, .rhap_rewind-button, .rhap_forward-button, .rhap_volume-controls {
+        display: none !important;
+    }
+    
+
+    .rhap_stacked-reverse .rhap_controls-section {
+        margin-bottom: 0 !important;
+        position: absolute !important;
+        top: 5px !important;
+        right: 0 !important;
+    }
+
+
+    .rhap_container {
+        padding: 0 !important;
+    }
+
+    .rhap_controls-section {
+        flex: 0 !important;
+    }
+
+
+    .rhap_progress-container {
+        height: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        top: 0 !important;
+        position: absolute !important;
+    }
+
+    .rhap_progress-bar {
+        border-radius: 0px !important;
+    }
+
+    .rhap_time {
+        display: none !important;
+    }
+}

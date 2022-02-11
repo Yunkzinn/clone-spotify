@@ -1,0 +1,59 @@
+#recently-played h2 {
+    margin-bottom: 20px;
+}
+
+#recently-played table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#recently-played table tr td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px 30px 10px 0;
+    color: #ccc;
+}
+
+#recently-played table tr td a:hover {
+    color: #FFF;
+}
+
+#recently-played table tr td span:hover {
+    color: #FFF;
+    cursor: pointer;
+}
+
+#recently-played table tr td a + a::before{
+    content: ", ";
+}
+
+#recently-played table tr {
+    border-bottom: 1px solid #282828;
+}
+
+#recently-played table tr:last-child {
+    border: none;
+}
+
+.track-active span {
+    color: #1ED760;
+}
+
+#recently-played table .track-active td span:hover {
+    color: #1ED760;
+}
+
+@media (max-width: 810px) {
+    #recently-played {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 1280px) {
+    #recently-played {
+        width: 100%;
+        overflow-x: auto;
+    }
+}

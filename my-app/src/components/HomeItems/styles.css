@@ -1,0 +1,42 @@
+.items {
+    margin: 15px 0 30px 0;
+}
+
+.items .item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.items .item-info .item-cover {
+    width: 100%;
+    background-position: 50%;
+    margin-bottom: 10px;
+}
+
+.items .item-info .item-name {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.items .item-info .artists-name {
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #CCC;
+}
+
+.items .item-info .artists-name a + a::before {
+    content: ", ";
+}
+
+.items .item-info .artists-name a span:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (max-width: 810px) {
+    .items .item-info .item-cover {
+        height: 9rem !important;
+        width: 9rem !important;
+    }
+}
